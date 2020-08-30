@@ -12,9 +12,13 @@
 <body class="page__body">
 
 <header class="page-header">
-  <div class="container">
+  <div class="page-header__container container">
     <a class="page-header__logo logo">
-      <img src="img/logo.svg" alt="Логотип «Мишка»">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Логотип «Мишка»">
+      </picture>
     </a>
 
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -40,14 +44,22 @@
         </li>
       </ul>
 
-      <ul class="main-nav__buttons site-buttons">
-        <li class="site-buttons__item">
-          <a class="site-buttons__link site-buttons__link--search" href="#">Поиск по сайту</a>
+      <ul class="main-nav__list-buttons site-list site-list--buttons">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--search" href="#">
+            Поиск по сайту
+            <svg class="site-list__icon" width="21" height="18">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </a>
         </li>
-        <li class="site-buttons__item">
-          <a class="site-buttons__link site-buttons__link--cart" href="#">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--cart" href="#">
             Корзина:
             <span>пока пуста</span>
+            <svg class="site-list__icon" width="21" height="18">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
           </a>
         </li>
       </ul>

@@ -5,10 +5,6 @@
   font-size: 15px;
   line-height: 30px;
   font-family: $opensans;
-
-  @media (min-width: $tablet-width) {
-    font-size: 17px;
-  }
 }
 
 .page__body {
@@ -17,4 +13,10 @@
   min-height: 100%;
   background-color: $page--bg;
   color: $page--txt;
+}
+
+@media (min-width: $tablet-width) {
+  .page {
+    font-size: 17px;
+  }
 }

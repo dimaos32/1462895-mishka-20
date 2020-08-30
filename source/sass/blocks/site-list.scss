@@ -1,0 +1,24 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__link {
+  position: relative;
+  display: block;
+  padding: 27px;
+  padding-left: 75px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $site-list--link;
+  border-top: 1px solid $site-list--link-border;
+}
+
+.site-list__icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  fill: $site-list--icon;
+}
