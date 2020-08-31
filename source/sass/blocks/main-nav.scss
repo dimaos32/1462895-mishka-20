@@ -1,13 +1,10 @@
-.main-nav {
-  position: relative;
-
-  outline: 4px solid rgba(red, 0.4);
-  outline-offset: -4px;
-}
+// .main-nav {
+//   position: relative;
+// }
 
 .main-nav__toggle {
   position: absolute;
-  top: -57px;
+  top: 0px;
   right: 20px;
   padding: 0;
   width: 40px;
@@ -76,6 +73,12 @@
 }
 
 @media (min-width: $tablet-width) {
+   .main-nav__list {
+    position: absolute;
+    left: 30px;
+    bottom: -65px;
+  }
+
   .main-nav__toggle {
     display: none;
   }

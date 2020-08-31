@@ -22,3 +22,46 @@
   left: 30px;
   fill: $site-list--icon;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--primary .site-list__link {
+      padding: 20px;
+      font-size: 15px;
+      border: none;
+    }
+
+    &--secondary {
+      display: none;
+    }
+
+    &--buttons {
+      margin-right: -32px;
+
+      .site-list__link {
+        padding: 32px;
+        padding-left: 80px;
+        border: none;
+        border-left: 1px solid $site-list--link-border;
+
+        &--search {
+          width: 85px;
+          height: 88px;
+          padding: 32px;
+        }
+      }
+    }
+  }
+
+  .site-list__link--search span {
+    display: none;
+  }
+
+  .site-list__icon {
+    top: 35px;
+    left: 32px;
+  }
+}
