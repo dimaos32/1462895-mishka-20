@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Осадченко](https://up.htmlacademy.ru/adaptive/20/user/1462895).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://up.htmlacademy.ru/adaptive/20/user/85590).
 
 ---
 

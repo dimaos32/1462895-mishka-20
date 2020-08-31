@@ -1,0 +1,38 @@
+// Colors
+
+$black: #000000;
+
+$black-almost: #231f20;
+$grey-dark: #444444;
+$white-snow: #ececec;
+
+$white: #ffffff;
+
+$site-color-dark: #46c1ae;
+$site-color-dim: #56c3b2;
+$site-color: #59d5bc;
+$site-color-light: #62d1ba;
+$site-color-bright: #63d1bb;
+
+
+// Fonts
+
+$opensans: "Open Sans", verdana, sans-serif;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;
+
+// Blocks
+
+$page--bg: $white;
+$page--txt: $grey-dark;
+
+
+$main-nav--btn: $black-almost;
+
+$site-list--link: $black;
+$site-list--icon: rgba($black, 0.2);
+$site-list--link-border: $white-snow;
