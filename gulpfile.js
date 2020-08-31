@@ -45,6 +45,7 @@ const server = (done) => {
     ui: false,
   });
   gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/js/**/*.js").on("change", sync.reload);
   done();
 }
 
@@ -145,6 +146,7 @@ exports.build = build;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/js/**/*.js", gulp.series("js"));
   gulp.watch("source/*.html", gulp.series("html"));
 };
 

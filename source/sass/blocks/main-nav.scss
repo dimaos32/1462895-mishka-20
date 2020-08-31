@@ -14,6 +14,7 @@
   height: 34px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   .main-nav--closed &::before {
     content: "";
@@ -50,6 +51,28 @@
 
 .main-nav__list-secondary {
   display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav {
+    &--closed .main-nav__wrapper {
+      display: none;
+    }
+
+    &--opened .main-nav__wrapper {
+      display: block;
+    }
+
+    &--nojs {
+      .main-nav__wrapper {
+        display: block;
+      }
+
+      .main-nav__toggle {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
