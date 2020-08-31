@@ -1,11 +1,18 @@
 // Colors
 
-$almost-black: #231F20;
-$grey-dark: #444444;
-$grey-light: #cecece;
-
 $black: #000000;
+
+$black-almost: #231F20;
+$grey-dark: #444444;
+$white-almost: #ececec;
+
 $white: #ffffff;
+
+$site-color-dark: #46C1AE;
+$site-color-dim: #56C3B2;
+$site-color: #59D5BC;
+$site-color-light: #62D1BA;
+$site-color-bright: #63D1BB;
 
 
 // Fonts
@@ -24,8 +31,8 @@ $page--bg: $white;
 $page--txt: $grey-dark;
 
 
-$main-nav--btn: $almost-black;
+$main-nav--btn: $black-almost;
 
 $site-list--link: $black;
 $site-list--icon: rgba($black, 0.2);
-$site-list--link-border: $grey-light;
+$site-list--link-border: $white-almost;
