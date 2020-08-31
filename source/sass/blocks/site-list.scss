@@ -65,3 +65,40 @@
     left: 32px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    &--primary {
+      margin-left: -32px;
+
+      .site-list__link {
+        padding: 32px;
+        font-size: 17px;
+        border: none;
+        border-left: 1px solid $site-list--link-border;
+
+        &--catalog {
+          border: none;
+        }
+      }
+    }
+
+    &--secondary {
+      display: flex;
+
+      .site-list__item:not(:first-of-type) {
+        margin-left: 20px;
+      }
+
+      .site-list__link {
+        padding: 20px;
+        font-size: 15px;
+        border: none;
+      }
+    }
+
+    &--catalog {
+      border: none;
+    }
+  }
+}

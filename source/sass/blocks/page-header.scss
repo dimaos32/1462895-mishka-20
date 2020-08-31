@@ -25,15 +25,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    border-bottom: 1px solid $site-list--link-border;
+  }
+
   .page-header__container {
     display: flex;
     align-items: center;
     padding: 0 50px;
-    border-bottom: 1px solid $site-list--link-border;
   }
 
   .page-header__logo {
     margin: 0;
     margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

@@ -38,11 +38,11 @@
   }
 
   .main-nav--opened &::before {
-    transform: rotate(-40deg);
+    transform: rotate(-45deg);
   }
 
   .main-nav--opened &::after {
-    transform: rotate(40deg);
+    transform: rotate(45deg);
   }
 }
 
@@ -81,5 +81,23 @@
 
   .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    width: 1050px;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    position: static;
+  }
+
+  .main-nav__list-secondary {
+    position: absolute;
+    left: 30px;
+    bottom: -65px;
   }
 }
