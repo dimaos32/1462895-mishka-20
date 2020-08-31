@@ -4,7 +4,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 20px;
   padding: 0;
   width: 40px;
@@ -73,7 +73,7 @@
 }
 
 @media (min-width: $tablet-width) {
-   .main-nav__list {
+  .main-nav__list {
     position: absolute;
     left: 30px;
     bottom: -65px;
