@@ -26,16 +26,6 @@
   list-style: none;
 }
 
-.general-offer__item:nth-child(4n+1),
-.general-offer__item:nth-child(4n+4) {
-  background-color: $general-offer--item-odd-bg;
-}
-
-.general-offer__item:nth-child(4n+2),
-.general-offer__item:nth-child(4n+3) {
-  background-color: $general-offer--item-even-bg;
-}
-
 .general-offer__link {
   position: relative;
   display: block;
@@ -45,6 +35,27 @@
   font-size: 19px;
   line-height: 24px;
   color: $general-offer--link;
+  outline: none;
+
+  .general-offer__item:nth-child(4n+1) &,
+  .general-offer__item:nth-child(4n+4) & {
+    background-color: $general-offer--item-odd-bg;
+
+    &:hover,
+    &:focus {
+      background-color: $general-offer--item-odd-bg-hover;
+    }
+  }
+
+  .general-offer__item:nth-child(4n+2) &,
+  .general-offer__item:nth-child(4n+3) & {
+    background-color: $general-offer--item-even-bg;
+
+    &:hover,
+    &:focus {
+      background-color: $general-offer--item-even-bg-hover;
+    }
+  }
 
   &--interior::before {
     position: absolute;
@@ -57,6 +68,15 @@
     opacity: 0.5;
   }
 
+  &--interior:hover::before,
+  &--interior:focus::before {
+    opacity: 0.7;
+  }
+
+  &--interior:active::before {
+    opacity: 0.3;
+  }
+
   &--toys::before {
     position: absolute;
     content: "";
@@ -66,6 +86,21 @@
     height: 60px;
     background: url("../img/icon-toy.svg");
     opacity: 0.5;
+  }
+
+  &--toys:hover::before,
+  &--toys:focus::before {
+    opacity: 0.7;
+  }
+
+  &--toys:active::before {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    margin-top: -5px;
+    padding-bottom: 35px;
   }
 
   div {
@@ -134,6 +169,11 @@
     &--toys::before {
       top: 31px;
       right: 33px;
+    }
+
+    &:hover,
+    &:focus {
+      padding-bottom: 40px;
     }
 
     div {
