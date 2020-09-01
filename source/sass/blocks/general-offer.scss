@@ -1,0 +1,77 @@
+.general-offer {
+  background-color: $general-offer--bg;
+}
+
+.general-offer__container {
+  max-width: 100%;
+  padding: 0;
+  padding-top: 75px;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: center -17px;
+  background-repeat: no-repeat;
+  background-size: 575px 373px;
+}
+
+.general-offer__title {
+  width: 300px;
+  margin: 0 auto 120px;
+  font-size: 27px;
+  text-align: center;
+}
+
+.general-offer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.general-offer__item:nth-child(odd) {
+  background-color: $general-offer--item-odd-bg;
+}
+
+.general-offer__item:nth-child(even) {
+  background-color: $general-offer--item-even-bg;
+}
+
+.general-offer__link {
+  position: relative;
+  display: block;
+  padding: 30px;
+  padding-top: 25px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: $general-offer--link;
+
+  &--interior::before {
+    position: absolute;
+    content: "";
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    background: url("../img/icon-interior.svg");
+    opacity: 0.5;
+  }
+
+  &--toys::before {
+    position: absolute;
+    content: "";
+    top: 21px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    background: url("../img/icon-toy.svg");
+    opacity: 0.5;
+  }
+
+  div {
+    width: 150px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .general-offer__container {
+    background-image: url('../../img/hero-mobile@2x.jpg');
+  }
+}

@@ -5,6 +5,7 @@ $black: #000000;
 $black-almost: #231f20;
 $grey-dark: #444444;
 $white-snow: #ececec;
+$white-almost: #f9f9f9;
 
 $white: #ffffff;
 
@@ -30,6 +31,11 @@ $mobile-width-only: 767px;
 $page--bg: $white;
 $page--txt: $grey-dark;
 
+
+$general-offer--bg: $white-almost;
+$general-offer--item-odd-bg: $site-color-bright;
+$general-offer--item-even-bg: $site-color-dim;
+$general-offer--link: $white;
 
 $main-nav--btn: $black-almost;
 
