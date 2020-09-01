@@ -71,3 +71,75 @@
     text-align: center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .product-card__header {
+    &--week-offer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+
+      outline: 2px dashed royalblue;
+    }
+  }
+
+  .product-card__title {
+    &--week-offer {
+      margin: 0;
+      font-size: 43px;
+      line-height: 50px;
+    }
+  }
+
+  .product-card__badge {
+    &--week-offer {
+      width: 130px;
+      margin: 0;
+      line-height: 17px;
+      text-align: center;
+
+      outline: 2px dashed darkgoldenrod;
+      outline-offset: -2px;
+    }
+  }
+
+  .product-card__content {
+    &--week-offer {
+      display: grid;
+      grid-template-columns: auto 334px;
+      grid-template-rows: min-content auto min-content min-content;
+      gap: 0 40px;
+      align-items: end;
+    }
+  }
+
+  .product-card__description {
+    &--week-offer {
+      margin-bottom: 40px;
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+
+  .product-card__properties {
+    &--week-offer {
+      margin-bottom: 55px;
+    }
+  }
+
+  .product-card__img {
+    &--week-offer {
+      grid-column: 2 / 3;
+      grid-row: 1 / 5;
+      margin: 0;
+    }
+  }
+
+  .product-card__price {
+    &--week-offer {
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+  }
+}
