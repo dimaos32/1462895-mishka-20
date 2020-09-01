@@ -28,11 +28,14 @@ $mobile-width-only: 767px;
 
 // Blocks
 
+$btn--border: $grey-dark;
+
+
 $page--bg: $white;
 $page--txt: $grey-dark;
+$page--txt-alt: $black;
 
 
-$general-offer--txt: $black;
 $general-offer--link: $white;
 $general-offer--bg: $white-almost;
 $general-offer--item-odd-bg: $site-color-bright;
@@ -43,3 +46,7 @@ $main-nav--btn: $black-almost;
 $site-list--link: $black;
 $site-list--icon: rgba($black, 0.2);
 $site-list--link-border: $white-snow;
+
+$product-card--border: $white-snow;
+$product-card--bage-week-offer: $site-color-bright;
+$product-card--img: $white-snow;

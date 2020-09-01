@@ -1,0 +1,73 @@
+.product-card__title {
+  &--week-offer {
+    margin: 0;
+    margin-bottom: 3px;
+    font-size: 25px;
+    color: $page--txt-alt;
+  }
+}
+
+.product-card__badge {
+  &--week-offer {
+    margin: 0;
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $product-card--bage-week-offer;
+  }
+}
+
+.product-card__description {
+  &--week-offer {
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+}
+
+.product-card__properties {
+  &--week-offer {
+    margin: 0;
+    margin-bottom: 30px;
+    line-height: 20px;
+  }
+}
+
+.product-card__property {
+  &--week-offer {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid $product-card--border;
+
+    dt {
+      width: 100px;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
+}
+
+.product-card__img {
+  &--week-offer {
+    display: block;
+    width: 100%;
+    min-height: 315px;
+    margin-bottom: 25px;
+    background-color: $product-card--img;
+  }
+}
+
+.product-card__price {
+  &--week-offer {
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
