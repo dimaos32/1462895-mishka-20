@@ -16,3 +16,25 @@
     background-repeat: repeat-x;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .week-offer__container {
+    padding-top: 40px;
+    padding-bottom: 70px;
+
+    &::after {
+      background-size: 772px 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-offer__container {
+    padding-top: 55px;
+    padding-bottom: 95px;
+
+    &::after {
+      background-size: 1050px 23px;
+    }
+  }
+}
