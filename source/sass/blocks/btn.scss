@@ -8,9 +8,23 @@
   text-align: center;
   text-transform: uppercase;
   color: $page--txt;
+  background-color: $btn--bg;
   border: 2px solid $btn--border;
+  outline: none;
 
-  @media (min-width: $tablet-width) {
+  &:hover,
+  &:focus {
+    color: $btn--txt-hover;
+    background-color: $btn--bg-hover;
+  }
+
+  &:active {
+    color: $btn--txt-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
     font-size: 17px;
   }
 }
