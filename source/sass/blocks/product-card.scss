@@ -122,10 +122,15 @@
     }
   }
 
-  .product-card__img {
+  .product-card__img-wrapper {
     &--week-offer {
       grid-column: 2 / 3;
       grid-row: 1 / 5;
+    }
+  }
+
+  .product-card__img {
+    &--week-offer {
       margin: 0;
     }
   }
