@@ -75,14 +75,13 @@
 
 @media (min-resolution: 2dppx) {
   .general-offer__container {
-    background-image: url('../img/hero-mobile@2x.jpg');
+    background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
 
 @media (min-width: $tablet-width) {
-  .general-offer__container {
+  .general-offer {
     position: relative;
-    padding: 155px 50px 12px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center top;
     background-size: 1150px 746px;
@@ -95,11 +94,15 @@
       bottom: 0;
       width: 100%;
       height: 34px;
-      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-position: center bottom;
       background-size: 770px 24px;
       background-repeat: repeat-x;
     }
+  }
+
+  .general-offer__container {
+    padding: 155px 50px 12px;
   }
 
   .general-offer__title {
@@ -119,28 +122,45 @@
   }
 
   .general-offer__link {
-  padding: 35px;
-  padding-top: 25px;
-  font-size: 20px;
-  line-height: 30px;
+    padding: 35px;
+    padding-top: 25px;
+    font-size: 20px;
+    line-height: 30px;
 
-  &--interior::before {
-    top: 30px;
-  }
+    &--interior::before {
+      top: 30px;
+    }
 
-  &--toys::before {
-    top: 31px;
-    right: 33px;
-  }
+    &--toys::before {
+      top: 31px;
+      right: 33px;
+    }
 
-  div {
-    width: 180px;
-  }
+    div {
+      width: 180px;
+    }
   }
 }
 
 @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
   .general-offer__container {
-    background-image: url('../img/hero-tablet@2x.jpg');
+    background-image: url("../img/hero-tablet@2x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .general-offer::after {
+    background-size: 1250px 34px;
+  }
+
+  .general-offer__container {
+    padding-top: 160px;
+    padding-bottom: 17px;
+  }
+
+  .general-offer__title {
+    margin-bottom: 355px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
