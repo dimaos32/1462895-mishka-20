@@ -55,5 +55,11 @@
 @media (min-width: $tablet-width) {
   .btn {
     font-size: 17px;
+
+    &--feedbacks {
+      margin: 0 7px;
+      background-color: transparent;
+      border: none;
+    }
   }
 }

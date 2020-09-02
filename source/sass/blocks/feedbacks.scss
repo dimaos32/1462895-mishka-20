@@ -19,16 +19,13 @@
 
 .feedbacks__title {
   margin: 0;
+  margin-bottom: 15px;
   font-size: 25px;
   color: $page--txt-alt;
 }
 
 .feedbacks__feedback {
   margin-bottom: 30px;
-}
-
-.feedback__content {
-  margin-bottom: 35px;
 }
 
 .feedbacks__controls {
@@ -38,16 +35,63 @@
 
 @media (min-width: $tablet-width) {
   .feedbacks__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    min-height: 542px;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    background: url("../img/review@1x.jpg") 0 0 no-repeat;
+
     &::after {
       background-size: 772px 17px;
     }
+  }
+
+  .feedbacks__title {
+    margin-bottom: 40px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .feedbacks__feedback {
+    margin-bottom: 50px;
+  }
+
+  .feedbacks__controls {
+    margin: 0;
+    margin-top: -110px;
+  }
+
+  .feedbacks__btn {
+    order: -1;
+    width: 175px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+  .feedbacks__container {
+    background-image: url("../img/review@2x.jpg");
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedbacks__container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 225px;
+    min-height: 547px;
+
     &::after {
       background-size: 1050px 23px;
     }
+  }
+
+  .feedbacks__title {
+    margin-bottom: 35px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
