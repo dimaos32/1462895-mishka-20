@@ -21,6 +21,35 @@
   &:active {
     color: $btn--txt-active;
   }
+
+  &--feedbacks {
+    padding: 12px;
+    line-height: 26px;
+    border: 1px solid $btn--feedbacks-border;
+
+    svg {
+      display: block;
+      margin: 0 auto;
+      fill: $btn--feedbacks-arrows;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $btn--bg;
+
+      svg {
+        fill: rgba($btn--feedbacks-arrows, 0.6);
+      }
+    }
+
+    &:active svg{
+      fill: rgba($btn--feedbacks-arrows, 0.3);
+    }
+
+    &-next {
+      margin-left: -1px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

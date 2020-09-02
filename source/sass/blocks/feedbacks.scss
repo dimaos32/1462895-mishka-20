@@ -1,0 +1,28 @@
+.feedbacks {
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  outline: 3px solid rgba(red, 0.4);
+  outline-offset: -3px;
+}
+
+.feedbacks__container {
+
+  outline: 6px dashed rgba(blue, 0.4);
+  outline-offset: -6px;
+}
+
+.feedbacks__title {
+  margin: 0;
+  font-size: 25px;
+  color: $page--txt-alt;
+}
+
+.feedbacks__feedback {
+  margin-bottom: 30px;
+}
+
+.feedbacks__controls {
+  display: flex;
+  margin-bottom: 40px;
+}

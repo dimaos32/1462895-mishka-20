@@ -146,25 +146,33 @@
 </section>
 
 <section class="feedbacks">
-  <h2 class="feedbacks__title">Отзывы</h2>
-  <div class="feedbacks__feedback feedback">
-    <p class="feedback__content">
-      Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-    </p>
-    <p class="feedback__author">
-      Анастасия Красильникова
-      <a class="feedback__author-profile" href="#">@misssssiskras</a>
-    </p>
+  <div class="feedbacks__container container">
+    <h2 class="feedbacks__title">Отзывы</h2>
+    <div class="feedbacks__feedback feedback">
+      <p class="feedback__content">
+        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+      </p>
+      <div class="feedback__author">
+        <p class="feedback__author-name">Анастасия Красильникова</p>
+        <a class="feedback__author-link" href="#">@misssssiskras</a>
+      </div>
+    </div>
+    <div class="feedbacks__controls">
+      <button class="btn btn--feedbacks btn--feedbacks-previous" type="button">
+        <svg class="social__icon" width="50" height="26">
+          <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
+        </svg>
+        <span class="visually-hidden">Предыдущий отзыв</span>
+      </button>
+      <button class="btn btn--feedbacks btn--feedbacks-next" type="button">
+        <svg class="social__icon" width="50" height="26">
+          <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
+        </svg>
+        <span class="visually-hidden">Следующий отзыв</span>
+      </button>
+    </div>
+    <a class="btn" href="#">Написать</a>
   </div>
-  <div class="feedbacks__controls">
-    <button class="btn btn--feedbacks btn--feedbacks-previous" type="button">
-      <span class="visually-hidden">Предыдущий отзыв</span>
-    </button>
-    <button class="btn btn--feedbacks btn--feedbacks-next" type="button">
-      <span class="visually-hidden">Следующий отзыв</span>
-    </button>
-  </div>
-  <a class="btn" href="#">Написать</a>
 </section>
 
 <section class="contacts">
