@@ -102,7 +102,7 @@
   .product-card__content {
     &--week-offer {
       display: grid;
-      grid-template-columns: auto 334px;
+      grid-template-columns: auto 333px;
       gap: 0 40px;
       align-items: end;
     }
@@ -131,6 +131,8 @@
 
   .product-card__img {
     &--week-offer {
+      width: 333px;
+      height: 404px;
       margin: 0;
     }
   }
@@ -185,6 +187,13 @@
   .product-card__properties {
     &--week-offer {
       margin-bottom: 110px;
+    }
+  }
+
+  .product-card__img {
+    &--week-offer {
+      width: 525px;
+      height: 636px;
     }
   }
 }
