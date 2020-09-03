@@ -25,17 +25,11 @@
 
   dt {
     width: 75px;
-
-    // outline: 1px solid red;
-    // outline-offset: -1px;
   }
 
   dd{
     margin: 0;
     flex: 1;
-
-    // outline: 1px solid blue;
-    // outline-offset: -1px;
   }
 
   a {
@@ -52,4 +46,104 @@
   min-height: 457px;
   margin: 0 -30px 40px;
   background-color: $product-card--img;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 70px;
+    padding-bottom: 55px;
+  }
+
+  .contacts__title {
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -22px;
+      right: 0;
+      width: 50px;
+      height: 90px;
+      background: url("../../img/icon-flag.svg") 0 0 no-repeat;
+    }
+  }
+
+  .contatcs__list {
+    display: flex;
+  }
+
+  .contatcs__item {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .contacts__img {
+    width: calc(100% + 100px);
+    max-width: calc(100% + 100px);
+    margin: 0 -50px 55px;
+  }
+
+  .contacts__btn {
+    margin: 0 auto;
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-bottom: 105px;
+  }
+
+  .contacts__container {
+    display: grid;
+    grid-template-columns: auto 525px;
+    grid-template-rows: 92px auto 52px;
+    gap: 0 40px;
+    padding-left: 225px;
+  }
+
+  .contacts__title {
+    position: relative;
+    margin-bottom: 35px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      top: -17px;
+      right: auto;
+      left: -112px;
+    }
+  }
+
+  .contatcs__list {
+    flex-direction: column;
+  }
+
+  .contatcs__item {
+    width: 100%;
+    margin-bottom: 30px;
+
+    a {
+      padding: 8px 0;
+    }
+  }
+
+  .contacts__img-wrapper {
+    grid-row: 1 / -1;
+    grid-column: 2 / -1;
+  }
+
+  .contacts__img {
+    width: 525px;
+    height: 457px;
+    margin: 0;
+  }
+
+  .contacts__btn {
+    margin: 0;
+    width: 230px;
+  }
 }

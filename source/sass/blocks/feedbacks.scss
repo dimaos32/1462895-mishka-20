@@ -83,9 +83,11 @@
     padding-bottom: 90px;
     padding-left: 225px;
     min-height: 547px;
+    background-position: 50px 0;
 
     &::after {
       background-size: 1050px 23px;
+      background-repeat: no-repeat;
     }
   }
 
