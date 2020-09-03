@@ -3,14 +3,39 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  margin: 0;
+  height: 40px;
+  margin: 20px 0;
   padding: 0;
   list-style: none;
   font-weight: 700;
   font-size: 19px;
   line-height: 20px;
   color: $page--txt-alt;
+  outline: none;
+
+  &:focus {
+    color: $page--link;
+
+    .copyright__icon {
+      fill: $copyright--icon-hover;
+    }
+  }
+
+  &:hover {
+    color: $page--txt-alt;
+
+    .copyright__icon {
+      fill: $copyright--icon-hover;
+    }
+  }
+
+  &:active {
+    color: $page--txt-alt;
+
+    .copyright__icon {
+      fill: rgba($copyright--icon-hover, 0.1);
+    }
+  }
 }
 
 .copyright__icon {

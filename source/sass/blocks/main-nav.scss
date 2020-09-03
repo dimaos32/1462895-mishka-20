@@ -47,8 +47,24 @@
   }
 
   .main-nav &:hover::before,
-  .main-nav &:hover::before {
-    background-color: red;
+  .main-nav &:hover::after,
+  .main-nav &:focus::before,
+  .main-nav &:focus::after {
+    background-color: $main-nav--btn-hover;
+  }
+
+  .main-nav--closed &:hover::before,
+  .main-nav--closed &:hover::after,
+  .main-nav--closed &:focus::before,
+  .main-nav--closed &:focus::after {
+    box-shadow:
+      0 6px 0 0 $main-nav--btn-hover,
+      0 12px 0 0 $main-nav--btn-hover;
+  }
+
+  .main-nav &:active::before,
+  .main-nav &:active::after {
+    opacity: 0.3;
   }
 }
 

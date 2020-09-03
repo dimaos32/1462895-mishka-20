@@ -33,8 +33,15 @@
       fill: $btn--feedbacks-arrows;
     }
 
-    &:hover,
     &:focus {
+      background-color: $btn--bg;
+
+      svg {
+        fill: $page--link;
+      }
+    }
+
+    &:hover {
       background-color: $btn--bg;
 
       svg {

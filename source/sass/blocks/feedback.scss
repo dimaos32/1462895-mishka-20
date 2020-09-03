@@ -14,6 +14,16 @@
 .feedback__author-link {
   font-size: 17px;
   color: $page--txt;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $page--link;
+  }
+
+  &:active {
+    color: rgba($page--link, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

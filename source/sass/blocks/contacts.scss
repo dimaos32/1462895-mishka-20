@@ -38,11 +38,22 @@
     margin: 0;
     flex: 1;
   }
+}
 
-  a {
-    padding: 2px 0;
-    color: $page--txt;
-    border-bottom: 1px solid $contacts--link;
+.contatcs__link {
+  padding: 2px 0;
+  color: $page--txt;
+  border-bottom: 1px solid $contacts--link;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $contacts--link-hover;
+    border-bottom: 1px solid $contacts--link-hover;
+  }
+
+  &:active {
+    border-bottom: 1px solid rgba($contacts--link-hover, 0.1);
   }
 }
 
@@ -142,10 +153,10 @@
   .contatcs__item {
     width: 100%;
     margin-bottom: 30px;
+  }
 
-    a {
-      padding: 8px 0;
-    }
+  .contatcs__link {
+    padding: 8px 0;
   }
 
   .contacts__img-wrapper {

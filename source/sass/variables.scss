@@ -43,12 +43,15 @@ $page--bg: $white;
 $page--bg-alt: $white-smoke;
 $page--txt: $grey-dark;
 $page--txt-alt: $black;
+$page--link: $site-color-dark;
 
 
 $contacts--link: $site-color-light;
+$contacts--link-hover: $site-color-dark;
 $contacts--img: $white-smoke;
 
 $copyright--icon: $site-color-bright;
+$copyright--icon-hover: $site-color-dark;
 
 $general-offer--link: $white;
 $general-offer--bg: $white-almost;
@@ -58,14 +61,17 @@ $general-offer--item-even-bg: $site-color-dim;
 $general-offer--item-even-bg-hover: $site-color-dark;
 
 $main-nav--btn: $black-almost;
+$main-nav--btn-hover: $site-color-bright;
 
 $product-card--border: $white-snow;
 $product-card--bage-week-offer: $site-color-bright;
 $product-card--img: $white-smoke;
 
 $site-list--link: $black;
-$site-list--icon: rgba($black, 0.2);
+$site-list--link-focus: $site-color-bright;
 $site-list--link-border: $white-snow;
 
+$social--icon: $black;
 $social--icon-mobile: $black-almost;
+$social--icon-hover: $site-color-dark;
 $social--border: $grey-extra-light;
