@@ -2,12 +2,22 @@
   display: block;
   width: 86px;
   height: 35px;
+
+  &--footer {
+    width: 102px;
+    height: 34px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .logo {
     width: 113px;
     height: 46px;
+
+    &--footer {
+      width: 102px;
+      height: 34px;
+    }
   }
 }
 
@@ -15,5 +25,10 @@
   .logo {
     width: 149px;
     height: 72px;
+
+    &--footer {
+      width: 102px;
+      height: 34px;
+    }
   }
 }

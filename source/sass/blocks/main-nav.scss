@@ -11,6 +11,7 @@
   height: 34px;
   background-color: transparent;
   border: none;
+  outline: none;
   cursor: pointer;
 
   .main-nav--closed &::before {
@@ -43,6 +44,11 @@
 
   .main-nav--opened &::after {
     transform: rotate(45deg);
+  }
+
+  .main-nav &:hover::before,
+  .main-nav &:hover::before {
+    background-color: red;
   }
 }
 

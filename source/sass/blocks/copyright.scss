@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 20px;
+  color: $page--txt-alt;
+}
+
+.copyright__icon {
+  margin-left: 25px;
+  fill: $copyright--icon;
+}

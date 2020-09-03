@@ -4,7 +4,9 @@ $black: #000000;
 
 $black-almost: #231f20;
 $grey-dark: #444444;
+$grey-extra-light: #e5e5e5;
 $white-snow: #ececec;
+$white-smoke: #f1f1f1;
 $white-almost: #f9f9f9;
 
 $white: #ffffff;
@@ -38,11 +40,15 @@ $btn--feedbacks-border: $white-snow;
 
 
 $page--bg: $white;
+$page--bg-alt: $white-smoke;
 $page--txt: $grey-dark;
 $page--txt-alt: $black;
 
 
 $contacts--link: $site-color-light;
+$contacts--img: $white-smoke;
+
+$copyright--icon: $site-color-bright;
 
 $general-offer--link: $white;
 $general-offer--bg: $white-almost;
@@ -53,10 +59,13 @@ $general-offer--item-even-bg-hover: $site-color-dark;
 
 $main-nav--btn: $black-almost;
 
+$product-card--border: $white-snow;
+$product-card--bage-week-offer: $site-color-bright;
+$product-card--img: $white-smoke;
+
 $site-list--link: $black;
 $site-list--icon: rgba($black, 0.2);
 $site-list--link-border: $white-snow;
 
-$product-card--border: $white-snow;
-$product-card--bage-week-offer: $site-color-bright;
-$product-card--img: $white-snow;
+$social--icon-mobile: $black-almost;
+$social--border: $grey-extra-light;

@@ -1,0 +1,12 @@
+.page-footer {
+  background-color: $page--bg-alt;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 145px;
+  }
+}
