@@ -1,0 +1,55 @@
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  outline: 3px solid rgba(red, 0.4);
+  outline-offset: -3px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: $page--txt-alt;
+}
+
+.contatcs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contatcs__item {
+  display: flex;
+  margin-bottom: 30px;
+
+  dt {
+    width: 75px;
+
+    // outline: 1px solid red;
+    // outline-offset: -1px;
+  }
+
+  dd{
+    margin: 0;
+    flex: 1;
+
+    // outline: 1px solid blue;
+    // outline-offset: -1px;
+  }
+
+  a {
+    padding: 2px 0;
+    color: $page--txt;
+    border-bottom: 1px solid $contacts--link;
+  }
+}
+
+.contacts__img {
+  display: block;
+  width: calc(100% + 60px);
+  max-width: calc(100% + 60px);
+  min-height: 457px;
+  margin: 0 -30px 40px;
+  background-color: $product-card--img;
+}
