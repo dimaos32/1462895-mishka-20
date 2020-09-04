@@ -1,0 +1,88 @@
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $page--txt;
+  background-color: $btn--bg;
+  border: 2px solid $btn--border;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $btn--txt-hover;
+    background-color: $btn--bg-hover;
+  }
+
+  &:active {
+    color: $btn--txt-active;
+  }
+
+  &--feedbacks {
+    padding: 12px;
+    line-height: 26px;
+    border: 1px solid $btn--feedbacks-border;
+
+    svg {
+      display: block;
+      margin: 0 auto;
+      fill: $btn--feedbacks-arrows;
+    }
+
+    &:focus {
+      background-color: $btn--bg;
+
+      svg {
+        fill: $page--link;
+      }
+    }
+
+    &:hover {
+      background-color: $btn--bg;
+
+      svg {
+        fill: rgba($btn--feedbacks-arrows, 0.6);
+      }
+    }
+
+    &:active svg {
+      fill: rgba($btn--feedbacks-arrows, 0.3);
+    }
+
+    &-next {
+      margin-left: -1px;
+    }
+  }
+
+  &--modal {
+    color: $btn--modal-txt;
+    background-color: $btn--modal-bg;
+    border-color: $btn--modal-border;
+
+    &:hover,
+    &:focus {
+      color: $btn--modal-bg;
+      background-color: $btn--modal-txt;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    font-size: 17px;
+
+    &--feedbacks {
+      margin: 0 7px;
+      background-color: transparent;
+      border: none;
+    }
+  }
+}

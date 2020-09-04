@@ -14,13 +14,35 @@
   line-height: 24px;
   color: $site-list--link;
   border-top: 1px solid $site-list--link-border;
+  outline: none;
+
+  &:hover {
+    color: rgba($site-list--link, 0.6);
+  }
+
+  &:focus {
+    color: $site-list--link-focus;
+  }
+
+  &:active {
+    color: rgba($site-list--link, 0.3);
+  }
 }
 
 .site-list__icon {
   position: absolute;
   top: 30px;
   left: 30px;
-  fill: $site-list--icon;
+  fill: rgba($site-list--link, 0.2);
+
+  .site-list__link:hover &,
+  .site-list__link:focus & {
+    fill: $site-list--link-focus;
+  }
+
+  .site-list__link:active & {
+    fill: rgba($site-list--link-focus, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -1,0 +1,48 @@
+.feedback__content {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.feedback__author-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $page--txt-alt;
+}
+
+.feedback__author-link {
+  font-size: 17px;
+  color: $page--txt;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $page--link;
+  }
+
+  &:active {
+    color: rgba($page--link, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__content {
+    font-size: 17px;
+    margin-bottom: 60px;
+  }
+
+  .feedback__author-name {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__content {
+    margin-bottom: 45px;
+  }
+
+  .feedback__author-name {
+    font-size: 17px;
+  }
+}

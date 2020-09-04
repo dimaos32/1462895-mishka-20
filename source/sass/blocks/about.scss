@@ -1,0 +1,136 @@
+.about {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: $page--txt-alt;
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__item {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $page--txt-alt;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &--eco::before {
+    top: 4px;
+    left: 8px;
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--hand-made::before {
+    top: 8px;
+    left: 3px;
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--scandinavian::before {
+    top: 7px;
+    left: 1px;
+    width: 50px;
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--domestic::before {
+    top: 9px;
+    left: -7px;
+    width: 60px;
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--likes::before {
+    top: 12px;
+    left: 8px;
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--gift-box::before {
+    top: 7px;
+    left: 2px;
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .about__item {
+    &--hand-made {
+      order: 4;
+    }
+
+    &--domestic {
+      order: 5;
+    }
+
+
+    &--gift-box {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding-top: 55px;
+    padding-bottom: 35px;
+  }
+
+  .about__title {
+    margin-bottom: 35px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__item {
+    width: 50%;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  .about__container {
+    width: 800px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__item {
+    padding-right: 40px;
+  }
+}
