@@ -255,6 +255,22 @@
   </div>
 </footer>
 
+<div class="modal">
+  <h2 class="modal__title">Добавить<span>&nbsp;</span><br>в корзину</h2>
+  <p class="modal__annotation">Выберите размер:</p>
+  <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+    <div class="modal__wrapper">
+      <input class="modal__input-radio visually-hidden" type="radio" name="size" id="size-s" value="s" checked>
+      <label class="modal__label-radio" for="size-s">s</label>
+      <input class="modal__input-radio visually-hidden" type="radio" name="size" id="size-m" value="m">
+      <label class="modal__label-radio" for="size-m">m</label>
+      <input class="modal__input-radio visually-hidden" type="radio" name="size" id="size-l" value="l">
+      <label class="modal__label-radio" for="size-l">l</label>
+    </div>
+    <button class="btn btn--modal" type="submit">Добавить</button>
+  </form>
+</div>
+
 <script src="js/script.js"></script>
 
 </body>

@@ -57,6 +57,22 @@
       margin-left: -1px;
     }
   }
+
+  &--modal {
+    color: $btn--modal-txt;
+    background-color: $btn--modal-bg;
+    border-color: $btn--modal-border;
+
+    &:hover,
+    &:focus {
+      color: $btn--modal-bg;
+    background-color: $btn--modal-txt;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

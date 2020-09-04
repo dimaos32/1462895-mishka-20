@@ -4,6 +4,7 @@ $black: #000000;
 
 $black-almost: #231f20;
 $grey-dark: #444444;
+$grey-light: #c6c6c6;
 $grey-extra-light: #e5e5e5;
 $white-snow: #ececec;
 $white-smoke: #f1f1f1;
@@ -37,6 +38,9 @@ $btn--bg-hover: $grey-dark;
 $btn--border: $grey-dark;
 $btn--feedbacks-arrows: $black;
 $btn--feedbacks-border: $white-snow;
+$btn--modal-txt: $white;
+$btn--modal-bg: $site-color-bright;
+$btn--modal-border: $site-color-bright;
 
 
 $page--bg: $white;
@@ -62,6 +66,13 @@ $general-offer--item-even-bg-hover: $site-color-dark;
 
 $main-nav--btn: $black-almost;
 $main-nav--btn-hover: $site-color-bright;
+
+$modal--txt-focus: $white;
+$modal--border: $grey-light;
+$modal--border-alt: $white-snow;
+$modal--border-alt-checked: $site-color-light;
+$modal--border-alt-hover: $grey-light;
+$modal--shaddow: rgba($black, 0.25);
 
 $product-card--border: $white-snow;
 $product-card--bage-week-offer: $site-color-bright;
