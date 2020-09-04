@@ -117,10 +117,6 @@
 @media (min-width: $tablet-width) {
   .general-offer {
     position: relative;
-    background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: center top;
-    background-size: 1150px 746px;
-    background-repeat: no-repeat;
 
     &::after {
       position: absolute;
@@ -138,6 +134,10 @@
 
   .general-offer__container {
     padding: 155px 50px 12px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center top;
+    background-size: 1150px 746px;
+    background-repeat: no-repeat;
   }
 
   .general-offer__title {

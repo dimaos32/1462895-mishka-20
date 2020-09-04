@@ -20,13 +20,13 @@
   color: $page--txt-alt;
 }
 
-.contatcs__list {
+.contacts__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.contatcs__item {
+.contacts__item {
   display: flex;
   margin-bottom: 30px;
 
@@ -40,7 +40,7 @@
   }
 }
 
-.contatcs__link {
+.contacts__link {
   padding: 2px 0;
   color: $page--txt;
   border-bottom: 1px solid $contacts--link;
@@ -93,11 +93,11 @@
     }
   }
 
-  .contatcs__list {
+  .contacts__list {
     display: flex;
   }
 
-  .contatcs__item {
+  .contacts__item {
     width: 50%;
     margin-bottom: 50px;
   }
@@ -146,16 +146,16 @@
     }
   }
 
-  .contatcs__list {
+  .contacts__list {
     flex-direction: column;
   }
 
-  .contatcs__item {
+  .contacts__item {
     width: 100%;
     margin-bottom: 30px;
   }
 
-  .contatcs__link {
+  .contacts__link {
     padding: 8px 0;
   }
 
