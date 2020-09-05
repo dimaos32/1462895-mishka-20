@@ -1,0 +1,57 @@
+.main-header {
+  background-color: $main-header--bg;
+}
+
+.main-header__container {
+  padding: 75px 0;
+}
+
+.main-header__title {
+  margin: 0;
+  font-size: 27px;
+  text-align: center;
+  color: $page--txt-alt
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 34px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: center bottom;
+      background-size: 770px 24px;
+      background-repeat: repeat-x;
+    }
+  }
+
+  .main-header__container {
+    padding: 100px 0 90px;
+  }
+
+  .main-header__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header::after {
+    background-size: 1250px 34px;
+  }
+
+  .main-header__container {
+    padding-bottom: 115px;
+  }
+
+  .main-header__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
