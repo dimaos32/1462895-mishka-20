@@ -1,0 +1,15 @@
+.manufacturing {
+  margin-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .manufacturing {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .manufacturing {
+    margin-bottom: 105px;
+  }
+}

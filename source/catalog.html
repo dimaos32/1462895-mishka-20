@@ -171,20 +171,25 @@
 
 <section class="manufacturing">
   <div class="container">
-    <h2 class="manufacturing__title">Процесс производства</h2>
-    <div class="manufacturing__video-wrapper">
-      <picture>
-        <source srcset="">
-        <source srcset="">
-        <img src="#" alt="Обложка видео-ролика о процесе производства" srcset="">
-      </picture>
-    </div>
-    <div class="manufacturing__footer">
-      <p class="manufacturing__description">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-      </p>
-      <a class="btn" href="#">СДелать заказ</a>
-    </div>
+    <article class="video">
+      <h2 class="video__title">Процесс&ensp;<br>производства</h2>
+      <div class="video__wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="video__cover" src="img/video-mobile@1x.jpg" alt="Обложка видео-ролика о процесе производства" srcset="img/video-mobile@2x.jpg 2x">
+        </picture>
+      </div>
+      <div class="video__footer">
+        <p class="video__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="btn" href="#">СДелать заказ</a>
+      </div>
+    </article>
   </div>
 </section>
 
