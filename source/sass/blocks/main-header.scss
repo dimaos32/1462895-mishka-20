@@ -1,20 +1,23 @@
 .main-header {
+  margin-bottom: 30px;
   background-color: $main-header--bg;
 }
 
 .main-header__container {
-  padding: 75px 0;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .main-header__title {
   margin: 0;
   font-size: 27px;
   text-align: center;
-  color: $page--txt-alt
+  color: $page--txt-alt;
 }
 
 @media (min-width: $tablet-width) {
   .main-header {
+    margin-bottom: 65px;
     position: relative;
 
     &::after {
@@ -32,7 +35,8 @@
   }
 
   .main-header__container {
-    padding: 100px 0 90px;
+    padding-top: 100px;
+    padding-bottom: 90px;
   }
 
   .main-header__title {
@@ -42,8 +46,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header::after {
-    background-size: 1250px 34px;
+  .main-header {
+    margin-bottom: 110px;
+
+    &::after {
+      background-size: 1250px 34px;
+    }
   }
 
   .main-header__container {

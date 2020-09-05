@@ -82,13 +82,16 @@
 <section class="catalog">
   <h2 class="visually-hidden">Перечень товаров в наличии</h2>
 
-  <div class="container">
-    <arcticle class="product-card">
-      <a href="#">
+  <div class="catalog__container container">
+    <article class="product-card">
+      <a class="product-card__link-img" href="#">
         <picture>
-          <source srcset="">
-          <source srcset="">
-          <img src="#" alt="Изображение товара «Зайчик-попрыгайчик»" srcset="">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+          <img class="product-card__img" src="img/photo-hare-mobile@1x.jpg" alt="Изображение товара «Зайчик-попрыгайчик»" srcset="img/photo-hare-mobile@2x.jpg 2x">
         </picture>
       </a>
       <div class="product-card__product-details">
@@ -102,18 +105,21 @@
             <svg class="product-card__btn-cart" width="20" height="19">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
-            <span>Добавить в корзину</span>
+            <span class="visually-hidden">Добавить в корзину</span>
           </a>
         </div>
       </div>
-    </arcticle>
+    </article>
 
-    <arcticle class="product-card">
-      <a href="#">
+    <article class="product-card">
+      <a class="product-card__link-img" href="#">
         <picture>
-          <source srcset="">
-          <source srcset="">
-          <img src="#" alt="Изображение товара «Корзинка для белья»" srcset="">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+          <img class="product-card__img" src="img/photo-bowl-mobile@1x.jpg" alt="Изображение товара «Корзинка для белья»" srcset="img/photo-bowl-mobile@1x.jpg 2x">
         </picture>
       </a>
       <div class="product-card__product-details">
@@ -127,18 +133,21 @@
             <svg class="product-card__btn-cart" width="20" height="19">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
-            <span>Добавить в корзину</span>
+            <span class="visually-hidden">Добавить в корзину</span>
           </a>
         </div>
       </div>
-    </arcticle>
+    </article>
 
-    <arcticle class="product-card">
-      <a href="#">
+    <article class="product-card">
+      <a class="product-card__link-img" href="#">
         <picture>
-          <source srcset="">
-          <source srcset="">
-          <img src="#" alt="Изображение товара «Большая корзинка для игрушек»" srcset="">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+          <img class="product-card__img" src="img/photo-toys-mobile@1x.jpg" alt="Изображение товара «Большая корзинка для игрушек»" srcset="img/photo-toys-mobile@2x.jpg 2x">
         </picture>
       </a>
       <div class="product-card__product-details">
@@ -152,11 +161,11 @@
             <svg class="product-card__btn-cart" width="20" height="19">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
-            <span>Добавить в корзину</span>
+            <span class="visually-hidden">Добавить в корзину</span>
           </a>
         </div>
       </div>
-    </arcticle>
+    </article>
   </div>
 </section>
 

@@ -1,9 +1,28 @@
-.product-card__title {
+.product-card {
+  margin-bottom: 30px;
+
   &--week-offer {
-    margin: 0;
+    margin-bottom: 0;
+  }
+}
+
+.product-card__product-details {
+  padding: 28px;
+  padding-bottom: 0;
+  border: 1px solid $product-card--border;
+}
+
+.product-card__title {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 17px;
+  line-height: 24px;
+  color: $page--txt-alt;
+
+  &--week-offer {
     margin-bottom: 3px;
     font-size: 25px;
-    color: $page--txt-alt;
+    line-height: 30px;
   }
 }
 
@@ -28,9 +47,14 @@
 }
 
 .product-card__properties {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 13px;
+  line-height: 30px;
+
   &--week-offer {
-    margin: 0;
     margin-bottom: 30px;
+    font-size: 15px;
     line-height: 20px;
   }
 }
@@ -51,28 +75,75 @@
   }
 }
 
-.product-card__img {
-  &--week-offer {
+.product-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-top: 1px solid $product-card--border;
+
+  a {
     display: block;
-    width: 100%;
+    height: 44px;
+    margin: -10px;
+    padding: 10px;
+  }
+}
+
+.product-card__btn-cart {
+  fill: $product-card--btn-cart;
+}
+
+.product-card__img {
+  display: block;
+  width: 100%;
+  min-height: 195px;
+  background-color: $product-card--img;
+
+  &--week-offer {
     min-height: 315px;
     margin-bottom: 25px;
-    background-color: $product-card--img;
   }
 }
 
 .product-card__price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: $page--txt-alt;
+
   &--week-offer {
-    margin: 0;
     margin-bottom: 25px;
-    font-weight: 700;
     font-size: 17px;
-    line-height: 24px;
     text-align: center;
+    color: $page--txt;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .product-card {
+    display: flex;
+    margin-bottom: 55px;
+
+    &--week-offer {
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+
+  .product-card__link-img {
+    width: 50%;
+  }
+
+  .product-card__product-details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   .product-card__header {
     &--week-offer {
       display: flex;
@@ -83,6 +154,8 @@
   }
 
   .product-card__title {
+    font-size: 20px;
+
     &--week-offer {
       margin: 0;
       font-size: 43px;
@@ -117,9 +190,15 @@
   }
 
   .product-card__properties {
+    font-size: 15px;
+
     &--week-offer {
       margin-bottom: 55px;
     }
+  }
+
+  .product-card__footer {
+    margin-top: auto;
   }
 
   .product-card__img-wrapper {
@@ -130,6 +209,8 @@
   }
 
   .product-card__img {
+    min-height: 334px;
+
     &--week-offer {
       width: 333px;
       height: 404px;
@@ -138,6 +219,8 @@
   }
 
   .product-card__price {
+    font-size: 17px;
+
     &--week-offer {
       font-size: 20px;
       margin-bottom: 35px;
@@ -147,9 +230,18 @@
 
 @media (min-width: $desktop-width) {
   .product-card {
+    display: block;
+
     &--week-offer {
       position: relative;
     }
+  }
+
+  .product-card__product-details {
+    width: 100%;
+    min-height: 200px;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 
   .product-card__header {
@@ -191,6 +283,9 @@
   }
 
   .product-card__img {
+    width: 316px;
+    height: 462px;
+
     &--week-offer {
       width: 525px;
       height: 636px;
