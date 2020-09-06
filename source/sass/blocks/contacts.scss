@@ -15,7 +15,7 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 18px;
   color: $page--txt-alt;
 }
@@ -128,13 +128,14 @@
     position: relative;
     display: grid;
     grid-template-columns: auto 525px;
-    grid-template-rows: 92px auto 52px;
+    grid-template-rows: 172px auto 52px;
     gap: 0 40px;
     padding-left: 225px;
   }
 
   .contacts__title {
     position: relative;
+    margin-top: 80px;
     margin-bottom: 35px;
     font-size: 53px;
     line-height: 57px;

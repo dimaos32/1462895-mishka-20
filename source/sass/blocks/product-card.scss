@@ -197,7 +197,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
   }
 
@@ -287,7 +287,7 @@
 
   .product-card__product-details {
     width: 100%;
-    min-height: 205px;
+    min-height: 197px;
     padding-left: 28px;
     padding-right: 28px;
   }
@@ -325,6 +325,8 @@
   }
 
   .product-card__properties {
+    margin-bottom: 10px;
+
     &--week-offer {
       margin-bottom: 110px;
     }
