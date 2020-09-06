@@ -1,3 +1,14 @@
+.video {
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 6px 10px $product-card--shadow;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $product-card--shadow;
+  }
+}
+
 .video__title {
   position: relative;
   margin: 0;
@@ -85,18 +96,17 @@
 @media (min-width: $desktop-width) {
   .video {
     position: relative;
-    margin-left: 682px;
-    min-height: 455px;
+    min-height: 457px;
   }
 
   .video__title {
-    padding-left: 80px;
+    padding-left: 762px;
     padding-top: 95px;
     padding-right: 55px;
 
     &::before {
       top: 45px;
-      left: 80px;
+      left: 762px;
     }
 
     br {
@@ -106,7 +116,8 @@
 
   .video__wrapper {
     position: absolute;
-    left: -682px;
+    top: 1px;
+    left: 1px;
     width: 682px;
     height: 455px;
     padding-bottom: 0;
@@ -114,6 +125,6 @@
 
   .video__footer {
     margin-top: auto;
-    padding: 30px 55px 60px 80px;
+    padding: 30px 55px 60px 762px;
   }
 }

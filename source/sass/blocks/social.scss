@@ -42,12 +42,6 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .page-footer__logo {
-    display: none;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .social {
     border: none;
