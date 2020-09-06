@@ -1,0 +1,8 @@
+@media (min-width: $desktop-width) {
+  .catalog__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    gap: 0 51px;
+  }
+}

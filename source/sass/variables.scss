@@ -48,6 +48,7 @@ $page--bg-alt: $white-smoke;
 $page--txt: $grey-dark;
 $page--txt-alt: $black;
 $page--link: $site-color-dark;
+$page--dim: $white;
 
 
 $contacts--link: $site-color-light;
@@ -64,8 +65,17 @@ $general-offer--item-odd-bg-hover: $site-color;
 $general-offer--item-even-bg: $site-color-dim;
 $general-offer--item-even-bg-hover: $site-color-dark;
 
+$logo--shadow-hover: $site-color-dark;
+$logo-footer--fill: $black;
+$logo-footer--fill-hover: $site-color-dark;
+
+$main-header--bg: $white-smoke;
+
 $main-nav--btn: $black-almost;
 $main-nav--btn-hover: $site-color-bright;
+
+$manufacturing--border: $white-snow;
+$manufacturing--img: $white-snow;
 
 $modal--txt-focus: $white;
 $modal--border: $grey-light;
@@ -74,9 +84,14 @@ $modal--border-alt-checked: $site-color-light;
 $modal--border-alt-hover: $grey-light;
 $modal--shaddow: rgba($black, 0.25);
 
+$product-card--link-focus: $site-color-bright;
 $product-card--border: $white-snow;
+$product-card--shadow: rgba($black, 0.1);
 $product-card--bage-week-offer: $site-color-bright;
-$product-card--img: $white-smoke;
+$product-card--img: $white-snow;
+$product-card--btn-cart: rgba($black, 0.2);
+$product-card--btn-cart-hover: $site-color-bright;
+$product-card--btn-cart-active: rgba($site-color-bright, 0.3);
 
 $site-list--link: $black;
 $site-list--link-focus: $site-color-bright;

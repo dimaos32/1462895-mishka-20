@@ -50,7 +50,7 @@
   }
 
   .feedbacks__title {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -61,7 +61,7 @@
 
   .feedbacks__controls {
     margin: 0;
-    margin-top: -110px;
+    margin-top: -100px;
   }
 
   .feedbacks__btn {
@@ -79,8 +79,8 @@
 
 @media (min-width: $desktop-width) {
   .feedbacks__container {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     padding-left: 225px;
     min-height: 547px;
     background-position: 50px 0;
@@ -92,8 +92,12 @@
   }
 
   .feedbacks__title {
-    margin-bottom: 35px;
+    margin: 0;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .feedbacks__controls {
+    margin-top: -130px;
   }
 }

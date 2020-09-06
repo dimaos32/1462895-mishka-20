@@ -15,18 +15,18 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 18px;
   color: $page--txt-alt;
 }
 
-.contatcs__list {
+.contacts__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.contatcs__item {
+.contacts__item {
   display: flex;
   margin-bottom: 30px;
 
@@ -40,7 +40,7 @@
   }
 }
 
-.contatcs__link {
+.contacts__link {
   padding: 2px 0;
   color: $page--txt;
   border-bottom: 1px solid $contacts--link;
@@ -93,11 +93,11 @@
     }
   }
 
-  .contatcs__list {
+  .contacts__list {
     display: flex;
   }
 
-  .contatcs__item {
+  .contacts__item {
     width: 50%;
     margin-bottom: 50px;
   }
@@ -128,13 +128,14 @@
     position: relative;
     display: grid;
     grid-template-columns: auto 525px;
-    grid-template-rows: 92px auto 52px;
+    grid-template-rows: 172px auto 52px;
     gap: 0 40px;
     padding-left: 225px;
   }
 
   .contacts__title {
     position: relative;
+    margin-top: 80px;
     margin-bottom: 35px;
     font-size: 53px;
     line-height: 57px;
@@ -146,16 +147,16 @@
     }
   }
 
-  .contatcs__list {
+  .contacts__list {
     flex-direction: column;
   }
 
-  .contatcs__item {
+  .contacts__item {
     width: 100%;
     margin-bottom: 30px;
   }
 
-  .contatcs__link {
+  .contacts__link {
     padding: 8px 0;
   }
 

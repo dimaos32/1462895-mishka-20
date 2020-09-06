@@ -2,11 +2,18 @@
   background-color: $page--bg-alt;
 }
 
+@media (max-width: $mobile-width-only) {
+  .page-footer__logo {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 145px;
+    padding-bottom: 10px;
   }
 }

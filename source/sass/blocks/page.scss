@@ -15,6 +15,21 @@
   color: $page--txt;
 }
 
+.page__dim {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($page--dim, 0.9);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page {
     font-size: 17px;
