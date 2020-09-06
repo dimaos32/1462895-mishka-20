@@ -25,7 +25,7 @@
     left: 35px;
     width: 35px;
     height: 25px;
-    background: url("../../img/icon-video.svg") 0 -5px no-repeat;
+    background: url("../img/icon-video.svg") 0 -5px no-repeat;
   }
 }
 
@@ -40,6 +40,31 @@
 .video__cover {
   display: block;
   width: 100%;
+}
+
+.video__control {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 101px;
+  height: 77px;
+  padding: 0;
+  background: transparent url("../../img/icon-play.svg") center center no-repeat;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .video__footer {
