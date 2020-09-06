@@ -16,7 +16,7 @@
     &:hover,
     &:focus-within,
     &:active {
-      box-shadow: none
+      box-shadow: none;
     }
   }
 }
@@ -118,7 +118,6 @@
   align-items: center;
   padding: 24px 0;
   border-top: 1px solid $product-card--border;
-
 }
 
 .product-card__link-add-to-cart {
@@ -133,11 +132,11 @@
   fill: $product-card--btn-cart;
 
   .product-card__link-add-to-cart:hover &,
-  .product-card__link-add-to-cart:focus &{
+  .product-card__link-add-to-cart:focus & {
     fill: $product-card--btn-cart-hover;
   }
 
-  .product-card__link-add-to-cart:active &{
+  .product-card__link-add-to-cart:active & {
     fill: $product-card--btn-cart-active;
   }
 }
