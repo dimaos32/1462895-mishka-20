@@ -13,6 +13,7 @@
 }
 
 .individual-order__legend {
+  margin: 0;
   padding: 0;
   padding-right: 20px;
   font-weight: 700;
@@ -112,5 +113,112 @@
 @media (min-width: $tablet-width) {
   .individual-order__wrapper:nth-child(2n):not(:last-child) {
     background-color: $page--bg-alt;
+  }
+
+  .individual-order__annotation {
+    margin-top: 55px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .individual-order__fieldset {
+    position: relative;
+    padding: 65px 25%;
+
+    &--colors {
+      padding-right: 0;
+    }
+  }
+
+  .individual-order__legend {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    padding: 0;
+  }
+
+  .individual-order__colors {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .individual-order__label {
+    font-size: 19px;
+    line-height: 20px;
+
+    &--radio {
+      margin-bottom: 56px;
+      padding-left: 80px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        top: -15px;
+        left: 0;
+        width: 50px;
+        height: 50px;
+      }
+
+      .individual-order__input-radio:checked + &::after {
+        top: 0;
+        left: 15px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &--checkbox {
+      width: 50%;
+      margin-bottom: 56px;
+      padding-left: 80px;
+
+      &:nth-of-type(n+5) {
+        margin: 0;
+      }
+
+      &::before {
+        top: -15px;
+        left: 0;
+        width: 50px;
+        height: 50px;
+      }
+
+      .individual-order__input-checkbox:checked + &::after {
+        top: -15px;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background-size: 32px 22px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .individual-order__annotation {
+    margin: 100px 175px 15px;
+  }
+
+  .individual-order__fieldset {
+    padding: 65px 175px;
+
+    &--colors {
+      padding-right: 0;
+    }
+  }
+
+  .individual-order__legend {
+    left: 60px;
+  }
+
+  .individual-order__label--checkbox {
+    width: 33.33%;
+
+    &:nth-of-type(n+4) {
+      margin: 0;
+    }
   }
 }

@@ -118,58 +118,60 @@
 
     <div class="individual-order__wrapper">
       <div class="individual-order__container container">
-        <fieldset class="individual-order__fieldset">
+        <fieldset class="individual-order__fieldset individual-order__fieldset--colors">
           <legend class="individual-order__legend">Цвет</legend>
 
-          <input class="individual-order__input-checkbox visually-hidden"
-            type="checkbox"
-            name="individual-order__color-white"
-            id="individual-order__color-white"
-            checked>
-          <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-white">
-            Белый
-          </label>
+          <div class="individual-order__colors">
+            <input class="individual-order__input-checkbox visually-hidden"
+              type="checkbox"
+              name="individual-order__color-white"
+              id="individual-order__color-white"
+              checked>
+            <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-white">
+              Белый
+            </label>
 
-          <input class="individual-order__input-checkbox visually-hidden"
-            type="checkbox"
-            name="individual-order__color-grey"
-            id="individual-order__color-grey"
-            checked>
-          <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-grey">
-            Серый
-          </label>
+            <input class="individual-order__input-checkbox visually-hidden"
+              type="checkbox"
+              name="individual-order__color-grey"
+              id="individual-order__color-grey"
+              checked>
+            <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-grey">
+              Серый
+            </label>
 
-          <input class="individual-order__input-checkbox visually-hidden"
-            type="checkbox"
-            name="individual-order__color-tiffany"
-            id="individual-order__color-tiffany">
-          <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-tiffany">
-            «Тиффани»
-          </label>
+            <input class="individual-order__input-checkbox visually-hidden"
+              type="checkbox"
+              name="individual-order__color-tiffany"
+              id="individual-order__color-tiffany">
+            <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-tiffany">
+              «Тиффани»
+            </label>
 
-          <input class="individual-order__input-checkbox visually-hidden"
-            type="checkbox"
-            name="individual-order__color-black"
-            id="individual-order__color-black">
-          <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-black">
-            Черный
-          </label>
+            <input class="individual-order__input-checkbox visually-hidden"
+              type="checkbox"
+              name="individual-order__color-black"
+              id="individual-order__color-black">
+            <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-black">
+              Черный
+            </label>
 
-          <input class="individual-order__input-checkbox visually-hidden"
-            type="checkbox"
-            name="individual-order__color-pink"
-            id="individual-order__color-pink">
-          <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-pink">
-            Розовый
-          </label>
+            <input class="individual-order__input-checkbox visually-hidden"
+              type="checkbox"
+              name="individual-order__color-pink"
+              id="individual-order__color-pink">
+            <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-pink">
+              Розовый
+            </label>
 
-          <input class="individual-order__input-checkbox visually-hidden"
-            type="checkbox"
-            name="individual-order__color-orange"
-            id="individual-order__color-orange">
-          <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-orange">
-            Оранжевый
-          </label>
+            <input class="individual-order__input-checkbox visually-hidden"
+              type="checkbox"
+              name="individual-order__color-orange"
+              id="individual-order__color-orange">
+            <label class="individual-order__label individual-order__label--checkbox" for="individual-order__color-orange">
+              Оранжевый
+            </label>
+          </div>
         </fieldset>
       </div>
     </div>
@@ -209,8 +211,8 @@
     </div>
 
     <div class="individual-order__wrapper">
-      <div class="individual-order__container container">
-        <div class="individual-order__form-user-contacts">
+      <div class="individual-order__form-user-contacts">
+        <div class="individual-order__container container">
           <label class="individual-order__label individual-order__label--like-legend">
             тел
             <input class="individual-order__input individual-order__input--phone"
@@ -219,7 +221,9 @@
               placeholder="+7 ХХХ ХХХ ХХ ХХ*"
               required>
           </label>
+        </div>
 
+        <div class="individual-order__container container">
           <label class="individual-order__label individual-order__label--like-legend">
             E-mail
             <input class="individual-order__input individual-order__input--email"
