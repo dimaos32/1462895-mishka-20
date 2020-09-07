@@ -1,0 +1,116 @@
+.individual-order__annotation {
+  margin: 0;
+  margin-top: 17px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.individual-order__fieldset {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  border: none;
+}
+
+.individual-order__legend {
+  padding: 0;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: $individual-order--txt-legend;
+  text-transform: uppercase;
+}
+
+.individual-order__label {
+  display: block;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $page--txt-alt;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &--radio {
+    position: relative;
+    margin-bottom: 42px;
+    padding-left: 60px;
+
+    &:last-of-type {
+      margin-bottom: 5px;
+    }
+
+    &::before {
+      top: -11px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: 2px solid $individual-order--radio-border;
+      border-radius: 50%;
+    }
+
+    .individual-order__input-radio:checked + &::after {
+      top: 1px;
+      left: 12px;
+      width: 16px;
+      height: 16px;
+      background-color: $individual-order--radio-checked;
+      border-radius: 50%;
+    }
+  }
+
+  &--checkbox {
+    position: relative;
+    margin-bottom: 42px;
+    padding-left: 60px;
+
+    &:last-of-type {
+      margin-bottom: 5px;
+    }
+
+    &::before {
+      top: -11px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: 2px solid $individual-order--radio-border;
+    }
+
+    .individual-order__input-checkbox:checked + &::after {
+      top: -11px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background: url("../img/icon-tick.svg") center no-repeat;
+      background-size: 23px 16px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .individual-order__container {
+    margin: 39px 30px 0;
+    padding: 0;
+    border-top: 1px solid $individual-order--txt-legend;
+  }
+
+  .individual-order__fieldset {
+    margin-top: -9px;
+  }
+
+  .individual-order__legend {
+    background-color: $page--bg;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .individual-order__wrapper:nth-child(2n):not(:last-child) {
+    background-color: $page--bg-alt;
+  }
+}
