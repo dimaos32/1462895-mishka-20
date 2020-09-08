@@ -30,12 +30,6 @@
   line-height: 18px;
   color: $page--txt-alt;
 
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-  }
-
   &--radio {
     position: relative;
     margin-bottom: 42px;
@@ -43,6 +37,12 @@
 
     &:last-of-type {
       margin-bottom: 5px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
     }
 
     &::before {
@@ -74,6 +74,12 @@
       margin-bottom: 5px;
     }
 
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+    }
+
     &::before {
       top: -11px;
       left: 0;
@@ -92,6 +98,38 @@
       background-size: 23px 16px;
     }
   }
+
+  &--input {
+    margin-bottom: 17px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &--like-legend {
+    width: max-content;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 17px;
+    color: $individual-order--txt-legend;
+    text-transform: uppercase;
+  }
+}
+
+.individual-order__input {
+  width: 100%;
+  padding: 15px 0;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 20px;
+  color: $page--txt-alt;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $individual-order--input-border;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -107,6 +145,13 @@
 
   .individual-order__legend {
     background-color: $page--bg;
+  }
+
+  .individual-order__label {
+    &--like-legend {
+      margin-top: -9px;
+      background-color: $page--bg;
+    }
   }
 }
 
@@ -125,9 +170,11 @@
   .individual-order__fieldset {
     position: relative;
     padding: 65px 25%;
+    padding-right: 0;
 
-    &--colors {
-      padding-right: 0;
+    &--user-name {
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
 
@@ -136,6 +183,15 @@
     top: 65px;
     left: 0;
     padding: 0;
+  }
+
+  .individual-order__label {
+    &--like-legend {
+      position: absolute;
+      top: 15px;
+      left: 50px;
+      padding: 0;
+    }
   }
 
   .individual-order__colors {
@@ -194,6 +250,34 @@
         background-size: 32px 22px;
       }
     }
+
+    &--input {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .individual-order__input {
+    padding: 13px 0;
+    font-size: 19px;
+    line-height: 24px;
+
+    &--user-name {
+      margin-left: 25px;
+    }
+  }
+
+  .individual-order__user-contacts {
+    padding: 50px 0;
+
+    .individual-order__container {
+      position: relative;
+    }
+
+    .individual-order__input {
+      width: 75%;
+      margin-left: 25%;
+    }
   }
 }
 
@@ -203,7 +287,8 @@
   }
 
   .individual-order__fieldset {
-    padding: 65px 175px;
+    padding-left: 175px;
+    padding-right: 175px;
 
     &--colors {
       padding-right: 0;
@@ -214,11 +299,21 @@
     left: 60px;
   }
 
-  .individual-order__label--checkbox {
-    width: 33.33%;
+  .individual-order__label {
+    &--checkbox {
+      width: 33.33%;
 
-    &:nth-of-type(n+4) {
-      margin: 0;
+      &:nth-of-type(n+4) {
+        margin: 0;
+      }
     }
+    &--like-legend {
+      left: 110px;
+    }
+  }
+
+  .individual-order__user-contacts .individual-order__input {
+    width: 700px;
+    margin-left: 175px;
   }
 }

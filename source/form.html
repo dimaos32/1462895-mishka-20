@@ -178,30 +178,30 @@
 
     <div class="individual-order__wrapper">
       <div class="individual-order__container container">
-        <fieldset class="individual-order__fieldset">
+        <fieldset class="individual-order__fieldset individual-order__fieldset--user-name">
           <legend class="individual-order__legend">ФИО</legend>
 
-          <label class="individual-order__label">
+          <label class="individual-order__label individual-order__label--input">
             Имя:
-            <input class="individual-order__input"
+            <input class="individual-order__input individual-order__input--user-name"
               type="text"
               name="individual-order__name"
               placeholder="Введите ваше имя*"
               required>
           </label>
 
-          <label class="individual-order__label">
+          <label class="individual-order__label individual-order__label--input">
             Фамилия:
-            <input class="individual-order__input"
+            <input class="individual-order__input individual-order__input--user-name"
               type="text"
               name="individual-order__surname"
               placeholder="Укажите фамилию*"
               required>
           </label>
 
-          <label class="individual-order__label">
+          <label class="individual-order__label individual-order__label--input">
             Отчество:
-            <input class="individual-order__input"
+            <input class="individual-order__input individual-order__input--user-name"
               type="text"
               name="individual-order__middle-name"
               placeholder="Отчество, если желаете">
@@ -211,27 +211,27 @@
     </div>
 
     <div class="individual-order__wrapper">
-      <div class="individual-order__form-user-contacts">
+      <div class="individual-order__user-contacts">
         <div class="individual-order__container container">
           <label class="individual-order__label individual-order__label--like-legend">
             тел
-            <input class="individual-order__input individual-order__input--phone"
-              type="tel"
-              name="individual-order__phone"
-              placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-              required>
           </label>
+          <input class="individual-order__input individual-order__input--phone"
+            type="tel"
+            name="individual-order__phone"
+            placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+            required>
         </div>
 
         <div class="individual-order__container container">
           <label class="individual-order__label individual-order__label--like-legend">
             E-mail
-            <input class="individual-order__input individual-order__input--email"
-              type="email"
-              name="individual-order__email"
-              placeholder="Ваш Email*"
-              required>
           </label>
+          <input class="individual-order__input individual-order__input--email"
+            type="email"
+            name="individual-order__email"
+            placeholder="Ваш Email*"
+            required>
         </div>
       </div>
     </div>
@@ -240,8 +240,8 @@
       <div class="individual-order__container container">
         <label class="individual-order__label individual-order__label--like-legend">
           Доп
-          <textarea class="individual-order__textarea" name="individual-order__extra" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </label>
+        <textarea class="individual-order__textarea" name="individual-order__extra" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
     </div>
 
