@@ -126,7 +126,7 @@
   font-family: inherit;
   font-size: 17px;
   line-height: 20px;
-  color: $page--txt-alt;
+  color: $page--txt;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid $individual-order--input-border;
@@ -141,7 +141,7 @@
   font-family: inherit;
   font-size: 17px;
   line-height: 18px;
-  color: $page--txt-alt;
+  color: $page--txt;
   background-color: transparent;
   border: 2px solid $individual-order--input-border;
   outline: none;
@@ -333,6 +333,8 @@
   .individual-order__textarea {
     width: 75%;
     margin-left: 25%;
+    font-size: 19px;
+    line-height: 20px;
   }
 
   .individual-order__form-footer {
