@@ -132,11 +132,41 @@
   border-bottom: 2px solid $individual-order--input-border;
 }
 
+.individual-order__textarea {
+  display: block;
+  width: 100%;
+  height: 140px;
+  min-height: 70px;
+  padding: 17px;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: $page--txt-alt;
+  background-color: transparent;
+  border: 2px solid $individual-order--input-border;
+  outline: none;
+  resize: vertical;
+}
+
+.individual-order__form-footer {
+  margin-top: 17px;
+  margin-bottom: 55px;
+}
+
+.individual-order__note {
+  margin: 0;
+}
+
 @media (max-width: $mobile-width-only) {
   .individual-order__container {
     margin: 39px 30px 0;
     padding: 0;
     border-top: 1px solid $individual-order--txt-legend;
+
+    .individual-order__wrapper:last-of-type & {
+      margin-top: 0;
+      border: none;
+    }
   }
 
   .individual-order__fieldset {
@@ -153,11 +183,31 @@
       background-color: $page--bg;
     }
   }
+
+  .individual-order__textarea {
+    margin-top: 22px;
+  }
+
+  .individual-order__note {
+    margin-bottom: 30px;
+  }
+
+  .individual-order__note {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .individual-order__wrapper:nth-child(2n):not(:last-child) {
-    background-color: $page--bg-alt;
+  .individual-order__wrapper{
+    &:nth-child(2n):not(:last-child) {
+      background-color: $page--bg-alt;
+    }
+
+    &--textarea .individual-order__container{
+      position: relative;
+      margin-top: 50px;
+    }
   }
 
   .individual-order__annotation {
@@ -279,6 +329,20 @@
       margin-left: 25%;
     }
   }
+
+  .individual-order__textarea {
+    width: 75%;
+    margin-left: 25%;
+  }
+
+  .individual-order__form-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -314,6 +378,16 @@
 
   .individual-order__user-contacts .individual-order__input {
     width: 700px;
+    margin-left: 175px;
+  }
+
+  .individual-order__textarea {
+    width: 700px;
+    margin-left: 175px;
+  }
+
+  .individual-order__form-footer {
+    margin-right: 175px;
     margin-left: 175px;
   }
 }
