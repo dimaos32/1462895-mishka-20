@@ -63,6 +63,16 @@
       background-color: $individual-order--radio-checked;
       border-radius: 50%;
     }
+
+    &:hover::before,
+    .individual-order__input-radio:focus + &::before {
+      border-color: $individual-order--border-hover;
+    }
+
+    &:active::before {
+      border-color: $individual-order--radio-border;
+      opacity: 0.3;
+    }
   }
 
   &--checkbox {
@@ -97,6 +107,16 @@
       background: url("../img/icon-tick.svg") center no-repeat;
       background-size: 23px 16px;
     }
+
+    &:hover::before,
+    .individual-order__input-checkbox:focus + &::before {
+      border-color: $individual-order--border-hover;
+    }
+
+    &:active::before {
+      border-color: $individual-order--radio-border;
+      opacity: 0.3;
+    }
   }
 
   &--input {
@@ -130,6 +150,12 @@
   background-color: transparent;
   border: none;
   border-bottom: 2px solid $individual-order--input-border;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: $individual-order--border-hover;
+  }
 }
 
 .individual-order__textarea {
@@ -146,6 +172,11 @@
   border: 2px solid $individual-order--input-border;
   outline: none;
   resize: vertical;
+
+  &:hover,
+  &:focus {
+    border-color: $individual-order--border-hover;
+  }
 }
 
 .individual-order__form-footer {
