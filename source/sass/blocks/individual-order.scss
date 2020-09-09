@@ -162,6 +162,10 @@
   border-bottom: 2px solid $individual-order--input-border;
   outline: none;
 
+  .individual-order__user-contacts & {
+    padding-right: 45px;
+  }
+
   &:hover,
   &:focus {
     border-color: $individual-order--border-hover;
@@ -366,6 +370,10 @@
     padding: 13px 17px;
     font-size: 19px;
     line-height: 24px;
+
+    .individual-order__user-contacts & {
+      padding-right: 60px;
+    }
 
     &--user-name {
       margin-left: 25px;
