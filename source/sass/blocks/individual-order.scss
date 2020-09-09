@@ -372,10 +372,6 @@
     font-size: 19px;
     line-height: 24px;
 
-    .individual-order__user-contacts & {
-      padding-right: 60px;
-    }
-
     &--user-name {
       margin-left: 25px;
     }
@@ -395,6 +391,7 @@
     .individual-order__input {
       width: 75%;
       margin-left: 25%;
+      padding-right: 60px;
     }
   }
 
