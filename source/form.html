@@ -213,13 +213,14 @@
     <div class="individual-order__wrapper">
       <div class="individual-order__user-contacts">
         <div class="individual-order__container container">
-          <label class="individual-order__label individual-order__label--like-legend">
+          <label class="individual-order__label individual-order__label--like-legend" for="individual-order__user-phone">
             тел
           </label>
           <input class="individual-order__input"
             type="tel"
             name="individual-order__phone"
             placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+            id="individual-order__user-phone"
             required>
             <svg class="individual-order__input-icon" width="25" height="25">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -227,13 +228,14 @@
         </div>
 
         <div class="individual-order__container container">
-          <label class="individual-order__label individual-order__label--like-legend">
+          <label class="individual-order__label individual-order__label--like-legend" for="individual-order__user-email">
             E-mail
           </label>
           <input class="individual-order__input"
             type="email"
             name="individual-order__email"
             placeholder="Ваш Email*"
+            id="individual-order__user-email"
             required>
             <svg class="individual-order__input-icon" width="32" height=32>
               <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -244,10 +246,10 @@
 
     <div class="individual-order__wrapper individual-order__wrapper--textarea">
       <div class="individual-order__container container">
-        <label class="individual-order__label individual-order__label--like-legend">
+        <label class="individual-order__label individual-order__label--like-legend" for="individual-order__user-extra">
           Доп
         </label>
-        <textarea class="individual-order__textarea" name="individual-order__extra" cols="40" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <textarea class="individual-order__textarea" name="individual-order__extra" id="individual-order__user-extra" cols="40" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
     </div>
 

@@ -137,6 +137,7 @@
 
   &--like-legend {
     width: max-content;
+    max-width: 100px;
     margin: 0;
     padding: 0;
     padding-right: 20px;
@@ -161,6 +162,10 @@
   border: none;
   border-bottom: 2px solid $individual-order--input-border;
   outline: none;
+
+  .individual-order__user-contacts & {
+    padding-right: 45px;
+  }
 
   &:hover,
   &:focus {
@@ -293,6 +298,7 @@
   .individual-order__colors {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .individual-order__label {
@@ -323,7 +329,7 @@
     }
 
     &--checkbox {
-      width: 50%;
+      width: calc(50% - 10px);
       margin-bottom: 56px;
       padding-left: 80px;
 
@@ -385,6 +391,7 @@
     .individual-order__input {
       width: 75%;
       margin-left: 25%;
+      padding-right: 60px;
     }
   }
 
@@ -421,6 +428,10 @@
 
   .individual-order__legend {
     left: 60px;
+  }
+
+  .individual-order__colors {
+    justify-content: flex-start;
   }
 
   .individual-order__label {
