@@ -293,6 +293,7 @@
   .individual-order__colors {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .individual-order__label {
@@ -323,9 +324,12 @@
     }
 
     &--checkbox {
-      width: 50%;
+      width: calc(50% - 10px);
       margin-bottom: 56px;
       padding-left: 80px;
+
+      outline: 1px dashed red;
+      outline-offset: -1px;
 
       &:nth-of-type(n+5) {
         margin: 0;
@@ -421,6 +425,10 @@
 
   .individual-order__legend {
     left: 60px;
+  }
+
+  .individual-order__colors {
+    justify-content: flex-start;
   }
 
   .individual-order__label {
